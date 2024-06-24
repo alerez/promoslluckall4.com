@@ -1,0 +1,225 @@
+.custom-btn {
+	color: #fff;
+	border-radius: 5px;
+	background: transparent;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	transition: all 0.3s;
+}
+
+.button-1 {
+	padding: 10px 20px;
+	margin: auto;
+	align-items: center;
+	border-radius: 50px;
+	border: none;
+	text-align: center;
+	color: transparent;
+	text-shadow: 0 0 0 rgb(236, 202, 51);
+	font-size: 19px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-decoration: none;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: transform 50ms ease;
+	background: linear-gradient(90deg, #fdec53, #f441a5, #b81fff, #5f03f4);
+	color: #ffffff;
+	text-shadow: rgba(140, 0, 255, 0.9) 0px 0px 20px;
+	background-size: 400%;
+	animation: welcome 0.5s ease 0s 1 normal forwards;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Montserrat", sans-serif;
+}
+
+.button-1:hover {
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(230, 219, 67, 0.9);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(224, 178, 78, 0.9);
+	box-shadow: 0px 0px 15px 0px rgba(212, 133, 109, 0.9);
+	animation: animate 8s ease infinite;
+	transition: box-shadow, 0.4s;
+	border: none;
+	font-size: 19px;
+	transform: scale(1.05, 1.05);
+	background: linear-gradient(90deg, #fdec53, #cc5e4a, #dfad41, #fdec53);
+	background-size: 400%;
+	animation: animate 7s cubic-bezier(0.75, 0.75, 0.75, 0.75) infinite;
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0%;
+	}
+
+	100% {
+		background-position: 400%;
+	}
+}
+
+@keyframes spin {
+	0% {
+		--rotate: 0deg;
+	}
+
+	100% {
+		--rotate: 360deg;
+	}
+}
+
+.button-1:hover:before {
+	filter: blur(20px);
+	opacity: 1;
+	animation: animate 8s linear infinite;
+}
+
+.button-2 {
+	cursor: pointer;
+
+	padding: 12px 28px;
+	margin: 1em;
+	position: relative;
+	min-width: 12em;
+	background: transparent;
+	font-size: 12px;
+	font-weight: bold;
+	color: var(--Gold);
+	text-align: center;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	letter-spacing: 0.1em;
+	border: 2px solid var(--Gold);
+	border-radius: 8px;
+	overflow: hidden;
+	z-index: 1;
+	transition: 0.5s;
+}
+
+.button-2 span {
+	position: absolute;
+	width: 25%;
+	height: 100%;
+	background-color: var(--Gold);
+	transform: translateY(150%);
+	border-radius: 50%;
+	left: calc((var(--n) - 1) * 25%);
+	transition: 0.5s;
+	transition-delay: calc((var(--n) - 1) * 0.1s);
+	z-index: -1;
+}
+
+.button-2:hover {
+	color: var(--white);
+}
+
+.button-2:hover span {
+	transform: translateY(0) scale(2);
+}
+
+.button-2 span:nth-child(1) {
+	--n: 1;
+}
+
+.button-2 span:nth-child(2) {
+	--n: 2;
+}
+
+.button-2 span:nth-child(3) {
+	--n: 3;
+}
+
+.button-2 span:nth-child(4) {
+	--n: 4;
+}
+
+.button-3 {
+	font-family: inherit;
+	display: inline-block;
+	padding: 10px 20px;
+	line-height: 2.5em;
+	margin: 20px;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid var(--Gold);
+	transition: color 0.5s;
+	z-index: 1;
+	font-size: 17px;
+	border-radius: 6px;
+	font-weight: 500;
+	color: var(--white);
+}
+
+.button-3:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	background: var(--Gold);
+	height: 150px;
+	width: 200px;
+	border-radius: 50%;
+}
+
+.button-3:hover {
+	color: var(--white);
+}
+
+.button-3:before {
+	top: 100%;
+	left: 100%;
+	transition: all 0.7s;
+}
+
+.button-3:hover:before {
+	top: -30px;
+	left: -30px;
+}
+
+.button-3:active:before {
+	background: var(--Gold);
+}
+
+.button-4 {
+	padding-left: 33px;
+	padding-right: 33px;
+	padding-bottom: 16px;
+	padding-top: 16px;
+	border-radius: 9px;
+	background: var(--Gold);
+	border: none;
+	font-family: inherit;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.button-4:hover {
+	box-shadow: 7px 5px 56px -14px var(--Gold);
+}
+
+.button-4:active {
+	transform: scale(0.97);
+	box-shadow: 7px 5px 56px -10px var(--Gold);
+}
+
+.button-5 {
+	padding: 20px 30px;
+	background: rgb(126, 124, 52);
+	background: linear-gradient(
+		0deg,
+		rgb(112, 99, 23) 0%,
+		rgb(112, 102, 44) 100%
+	);
+	border: none;
+}
+
+.button-5:hover {
+	background: rgb(236, 162, 24);
+	background: linear-gradient(
+		0deg,
+		rgba(228, 170, 11, 0.753) 0%,
+		rgb(224, 146, 44) 100%
+	);
+}
