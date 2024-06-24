@@ -17,7 +17,7 @@ function loadNavComponent() {
                 </li>
 
                 <li>
-                    <a class="menu-item_link" href="cherry-fiesta-funfair.html" target="_blank">Top game</a>
+                    <a class="menu-item_link" href="top-game.html" target="_blank">Top game</a>
                 </li>
 
                 <li>
@@ -42,7 +42,7 @@ function loadNavComponent() {
                   <a class="link-menu" href="games.html" target="_blank">All games </a>
                 </li>
                 <li class="menu-item">
-                    <a class="link-menu" href="cherry-fiesta-funfair.html" target="_blank">Top game </a>
+                    <a class="link-menu" href="top-game.html" target="_blank">Top game </a>
                 </li>
                 <li class="menu-item">
                   <a class="link-menu" href="about-us.html" target="_blank">About Us </a>
